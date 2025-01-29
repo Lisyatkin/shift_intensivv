@@ -91,8 +91,8 @@ header {
 .main {
     display: flex;
     justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали (если нужно на всю высоту) */
-    min-height: 100vh; /* Минимальная высота экрана */
+    align-items: center; 
+    min-height: 100vh; 
     padding-top: 20px; /* Отступ сверху, чтобы не упиралось в хеддер */
     }
     
@@ -130,14 +130,14 @@ header {
 .card-img {
     width: 220px;
     height: 220px; /* Размер изображения */
-    object-fit: cover; /* Сохраняем пропорции изображения */
+    object-fit: cover; 
 }
 
 /* Заголовок карточки */
 .card-title {
     flex-grow: 1;
     justify-content: space-between;
-    min-height: 65px; /* Минимальная высота */
+    min-height: 68px; /* Минимальная высота */
     max-height: 120px; /* Максимальная высота */
     overflow: hidden; /* Чтобы длинный текст не ломал верстку */
     text-overflow: ellipsis;
