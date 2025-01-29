@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 pizzaCard.classList.add('pizza-card');
 
                 // Проверяем, есть ли изображение
-                const pizzaImage = pizza.img ? `http://shift-intensive.ru${pizza.img}` : 'default-image.png';
+                const pizzaImage = pizza.img ? `http://shift-intensive.ru/api${pizza.img}` : 'default-image.png';
 
                 // Проверяем, есть ли цены
                 const pizzaPrice = (pizza.sizes && pizza.sizes.length > 0) ? pizza.sizes[0].price : 'Не указана';
