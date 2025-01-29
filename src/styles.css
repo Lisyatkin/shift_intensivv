@@ -1,0 +1,172 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+}
+
+header {
+    background: white;
+    color: white;
+    padding: 20px;
+    border-bottom: 2px solid #ced2da;
+}
+
+.page-header {
+    position: fixed;
+    gap: 10px;
+    width: 100%;
+    height: 27.14px;
+    background-color: white(222,222,222,0.5); 
+    z-index: 100;
+}
+
+.page-header__container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    
+    padding-left: 20px;
+   
+
+    width: 100%;
+   
+    
+}
+
+.page-header__logo {
+    width: 102px;
+    padding-left: 19%;
+}
+
+
+.page-header__nav {
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+    gap: 50px;
+
+}
+
+.page-header__nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #344051;
+    transition: color 0.2s;
+
+}
+
+.page-header__nav-link:hover,
+.page-header__nav-link:active {
+    color: #BC3324;
+}
+
+
+.page-header__navright {
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+    gap: 50px;
+
+}
+
+.page-header__navright-link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #344051;
+    transition: color 0.2s;
+
+}
+
+.page-header__navright-link:hover,
+.page-header__nav-link:active {
+    color: #BC3324;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали (если нужно на всю высоту) */
+    min-height: 100vh; /* Минимальная высота экрана */
+    padding-top: 20px; /* Отступ сверху, чтобы не упиралось в хеддер */
+    }
+    
+    .page-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .footer__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки в ряд */
+        gap: 20px; /* Расстояние между карточками */
+        justify-content: center; /* Центрируем карточки */
+        padding: 40px;
+        max-width: 1000px; /* Ограничиваем ширину контейнера */
+        margin: 0 auto; /* Центрируем блок */
+
+    }
+    .pizza-card {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 10px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+/* Стили для изображения */
+.card-img {
+    width: 220px;
+    height: 220px; /* Размер изображения */
+    object-fit: cover; /* Сохраняем пропорции изображения */
+}
+
+/* Заголовок карточки */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0 10px;
+    color: #333;
+    text-align: left
+}
+
+/* Описание карточки */
+.card-sub {
+    color: #777;
+    flex-grow: 1; /* Растягиваем описание, чтобы все карточки были одинаковой высоты */
+    min-height: 80px; /* Минимальная высота */
+    max-height: 120px; /* Максимальная высота */
+    overflow: hidden; /* Чтобы длинный текст не ломал верстку */
+    text-overflow: ellipsis;
+    text-align: left
+}
+
+button {
+    padding: 5% 40%;
+    font-size: 16px;
+    background: #e64a19;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 21px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #e65c00; /* Темнее при наведении */
+    box-shadow: 0 4px 10px rgba(255, 102, 0, 0.5); /* Подсветка */
+}
+
+/* Эффект при нажатии */
+.button:active {
+    transform: scale(0.98); /* Легкое сжатие */
+    box-shadow: 0 2px 5px rgba(255, 102, 0, 0.5);
+}
